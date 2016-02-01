@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app = "weatherApp">
+    <head>
+        <title>Weather Forecast Using Angularjs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- load angular via CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.4.5/angular-resource.js"></script>
+        <script src="app.js"></script>
+        <script src="routes.js"></script>
+        <script src="service.js"></script>
+        <script src="controllers.js"></script>
+        <script src="directives.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default custom-header">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand title" href="#/">Weather Forecast using AngularJS</a>
+				</div>
+                
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+                <div ng-view> </div>
+
+		</div>
+        
+        <div class="custom-footer">
+            <p >
+                <span class="footer-content">Created by Palini</span><br />
+                <span class="label label-danger">HTML5</span>
+                <span class="label label-primary">CSS3</span>
+                <span class="label label-warning">Bootstrap</span>
+                <span class="label label-success">AngularJS</span>
+            </p>
+        </div>
+
+    </body>
+</html>
